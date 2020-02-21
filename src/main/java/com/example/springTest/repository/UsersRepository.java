@@ -6,5 +6,5 @@ import org.springframework.data.repository.NoRepositoryBean;
 
 @NoRepositoryBean
 public interface UsersRepository extends JpaRepository<Users,Integer> {
-    Users findUser(String user);
+    Users findByUsername(String user);
 }

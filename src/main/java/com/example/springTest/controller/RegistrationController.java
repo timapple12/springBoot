@@ -14,7 +14,7 @@ import java.util.Map;
 @Controller
 public class RegistrationController {
 
-    @Autowired(required =false)
+    @Autowired(required = false)
     private UsersRepository usersRepository;
     public void setUserRepository(UsersRepository usersRepository) {
         this.usersRepository = usersRepository;
@@ -27,20 +27,15 @@ public class RegistrationController {
     @PostMapping("/registration")
     public String addNewUser(Users users, Map<String,Object> model){
         Users frmdb;
-        try {
-            frmdb = usersRepository.findUser(users.getPassword());
-        }catch (Exception e){
-            System.out.println(e);
-            return "registration";
-        }
-
+             frmdb= usersRepository.findByUsername(users.getUsername());
         if(frmdb!=null){
-            model.put("users","User "+users.getUsername().trim()+" exist");
+            model.put("user","User "+users.getUsername().trim()+" exist");
             return "registration";
 
         }
         users.setActive(true);
         users.setRoles(Collections.singleton(Role.USER));
+
         usersRepository.save(users);
         return "redirect:/login";
     }
