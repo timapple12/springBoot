@@ -1,0 +1,29 @@
+<html>
+<csrf disabled="true"/>
+<body>
+    <div>
+        <form method="post">
+            <input type="hidden"
+                   name="${_csrf.parameterName}"
+                   value="${_csrf.token}"/>
+            <input type ="message"name="message" placeholder="Enter a message"/>
+            <input type ="message"name="tag" placeholder="Tag"/>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+    <div>List of massages</div>
+    <form method="post" action="filter">
+        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+        <input type="text"name="filter">
+        <button type="submit">Find</button>
+    </form>
+    {{#messages}}
+        <div>
+            <b>{{id}}</b>
+             <span>{{messages}}</span>
+            <i>{{tag}}</i>
+        </div>
+    {{/messages}}
+
+</body>
+</html>
