@@ -1,10 +1,9 @@
-package com.example.springTest.repositorys;
+package com.example.springTest.repository;
 
 import com.example.springTest.domain.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.NoRepositoryBean;
 
-@NoRepositoryBean
-public interface UsersRepository extends JpaRepository<Users,Integer> {
-    Users findByUsername(String user);
+
+public interface UsersRepository extends JpaRepository<Users,Long> {
+   Users findByUsername(String user);
 }

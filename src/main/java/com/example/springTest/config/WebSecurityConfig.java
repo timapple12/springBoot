@@ -21,7 +21,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/main", "/registration").permitAll()
+                .antMatchers("/", "/registration").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
@@ -37,8 +37,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             auth.jdbcAuthentication()
                     .dataSource(dataSource)
                     .passwordEncoder(NoOpPasswordEncoder.getInstance())
-                    .usersByUsernameQuery("select username, password, active from usr where username=?")
-                    .authoritiesByUsernameQuery("select u.username, ur.roles from usr u inner join user_role ur on u.id = ur.user_id where u.username=?");
+                    .usersByUsernameQuery("select username, password, roll from user where username=?")
+                    .authoritiesByUsernameQuery("select username, roles from user inner join roll on id = rolles where username=?");
 
     }
    /* @Bean

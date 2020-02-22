@@ -1,4 +1,4 @@
-package com.example.springTest.repositorys;
+package com.example.springTest.repository;
 
 
 import com.example.springTest.domain.Message;

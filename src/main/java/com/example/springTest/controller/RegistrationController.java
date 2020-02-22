@@ -1,8 +1,8 @@
-package com.example.springTest;
+package com.example.springTest.controller;
 
 import com.example.springTest.domain.Role;
 import com.example.springTest.domain.Users;
-import com.example.springTest.repositorys.UsersRepository;
+import com.example.springTest.repository.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,26 +13,27 @@ import java.util.Map;
 
 @Controller
 public class RegistrationController {
-
     @Autowired(required = false)
     private UsersRepository usersRepository;
-    public void setUserRepository(UsersRepository usersRepository) {
-        this.usersRepository = usersRepository;
-    }
-
+    @Autowired(required = false)
+    Users frmdb;
     @GetMapping("/registration")
     public String registration(){
         return "registration";
     }
     @PostMapping("/registration")
     public String addNewUser(Users users, Map<String,Object> model){
-        Users frmdb;
-             frmdb= usersRepository.findByUsername(users.getUsername());
+
+            frmdb= usersRepository.findByUsername(users.getUsername());
+
+
         if(frmdb!=null){
-            model.put("user","User "+users.getUsername().trim()+" exist");
-            return "registration";
+        model.put("user","User "+users.getUsername().trim()+" exist");
+        return "registration";
 
         }
+        users.setUsername(users.getUsername());
+        users.setPassword(users.getPassword());
         users.setActive(true);
         users.setRoles(Collections.singleton(Role.USER));
 

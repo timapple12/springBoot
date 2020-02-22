@@ -1,7 +1,7 @@
-package com.example.springTest;
+package com.example.springTest.controller;
 
 import com.example.springTest.domain.Message;
-import com.example.springTest.repositorys.MessageRepository;
+import com.example.springTest.repository.MessageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

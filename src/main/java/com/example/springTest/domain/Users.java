@@ -3,16 +3,18 @@ package com.example.springTest.domain;
 import javax.persistence.*;
 import java.util.Set;
 @Entity
-@Table(name = "users")
+
 public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    @Column(name = "username")
     private String username;
+    @Column(name = "password")
     private String password;
     private boolean active;
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
-    @CollectionTable(name = "datasource", joinColumns = @JoinColumn(name = "user_id"))
+    @Column(name="roll")
     @Enumerated(EnumType.STRING)
     private Set<Role> roles;
 
@@ -55,7 +57,5 @@ public class Users {
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
-    public Users(){
-
-    }
+    public Users(){}
 }
