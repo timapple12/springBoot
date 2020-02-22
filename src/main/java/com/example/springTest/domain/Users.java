@@ -3,13 +3,14 @@ package com.example.springTest.domain;
 import javax.persistence.*;
 import java.util.Set;
 @Entity
-
+@Table(name="users")
 public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column(name = "username")
     private String username;
+
     @Column(name = "password")
     private String password;
     private boolean active;

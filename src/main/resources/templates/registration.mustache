@@ -17,7 +17,10 @@ Add new user
            value="${_csrf.token}"/>
     <div><input type="submit" value="Sign up"/></div>
 </form>
-
+<h3>List of all registered users</h3>
+{{#users}}
+    <div><b>{{users}}</b></div>
+{{/users}}
 
 </body>
 </html>

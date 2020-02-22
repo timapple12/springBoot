@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Collections;
 import java.util.Map;
@@ -18,14 +19,14 @@ public class RegistrationController {
     @Autowired(required = false)
     Users frmdb;
     @GetMapping("/registration")
-    public String registration(){
+    public String registration(Map<String,Object>model){
+
         return "registration";
     }
     @PostMapping("/registration")
     public String addNewUser(Users users, Map<String,Object> model){
 
             frmdb= usersRepository.findByUsername(users.getUsername());
-
 
         if(frmdb!=null){
         model.put("user","User "+users.getUsername().trim()+" exist");
@@ -34,10 +35,15 @@ public class RegistrationController {
         }
         users.setUsername(users.getUsername());
         users.setPassword(users.getPassword());
-        users.setActive(true);
         users.setRoles(Collections.singleton(Role.USER));
 
         usersRepository.save(users);
         return "redirect:/login";
+    }
+    @RequestMapping("/registration")
+    public String showUsers(Map<String,Object>model){
+        Iterable<Users>listOfUsers=usersRepository.findAll();
+        model.put("users",listOfUsers);
+        return "registration";
     }
 }
