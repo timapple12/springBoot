@@ -12,6 +12,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableWebSecurity
+
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private DataSource dataSource;
@@ -22,6 +23,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/", "/registration").permitAll()
+
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
@@ -29,7 +31,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll()
                 .and()
                 .logout()
-                .permitAll();
+                .permitAll().and().formLogin();
     }
     @Override
     protected void configure(AuthenticationManagerBuilder auth)  throws Exception {
@@ -37,20 +39,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             auth.jdbcAuthentication()
                     .dataSource(dataSource)
                     .passwordEncoder(NoOpPasswordEncoder.getInstance())
-                    .usersByUsernameQuery("select username, password from users where username=?")
-                    .authoritiesByUsernameQuery("select username, roll from users where username=?");
+                    .usersByUsernameQuery("select username, password, active from users where username=?")
+                    .authoritiesByUsernameQuery("select u.username, ur.roles from users u inner join users_roles ur on u.id=ur.user_id where u.username=?");
 
     }
-   /* @Bean
-    @Override
-    public UserDetailsService userDetailsService() {
-        UserDetails user =
-                User.withDefaultPasswordEncoder()
-                        .username("u")
-                        .password("p")
-                        .roles("USER").roles("ADMIN")
-                        .build();
 
-        return new InMemoryUserDetailsManager(user);
-    }*/
 }

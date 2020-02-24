@@ -2,6 +2,7 @@ package com.example.springTest.domain;
 
 import javax.persistence.*;
 import java.util.Set;
+
 @Entity
 @Table(name="users")
 public class Users {
@@ -14,8 +15,8 @@ public class Users {
     @Column(name = "password")
     private String password;
     private boolean active;
+    @CollectionTable(name="users_roles",joinColumns = @JoinColumn(name="user_id"))
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
-    @Column(name="roll")
     @Enumerated(EnumType.STRING)
     private Set<Role> roles;
 

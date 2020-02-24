@@ -23,9 +23,9 @@ public class Main {
         public String main(Map<String,Object>model){
             Iterable<Message> messages=repository.findAll();
             if(repository.findAll()!=null){
-                model.put("messages",messages);
+                model.put("message",messages);
             }else{
-                model.put("messages","there're no data");
+                model.put("message","there're no data");
             }
 
             return "main";
@@ -40,13 +40,13 @@ public class Main {
        }
 
          Iterable<Message> messages=repository.findAll();
-         model.put("messages",messages);
+         model.put("message",messages);
          return "main";
      }
      @PostMapping("/filter")
      public String filter(@RequestParam String filter, Map<String,Object>model) {
          List<Message> messages=repository.findByTag(filter);
-          model.put("messages", messages);
+          model.put("message", messages);
          return "main";
      }
 
