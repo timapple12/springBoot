@@ -39,4 +39,14 @@ public class Message {
     public void setTag(String tag) {
         this.tag = tag;
     }
+
+    @Override
+    public String toString() {
+        return "Message{" +
+                "id=" + id +
+                ", message='" + message + '\'' +
+                ", tag='" + tag + '\'' +
+                '}';
+    }
+
 }

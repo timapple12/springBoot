@@ -23,7 +23,7 @@ public class Main {
     @PostMapping("/")
     public String greeting(
             @RequestParam(name="name", required=false, defaultValue="Oleksandr") String name, Model model) {
-        model.addAttribute("names", name);
+        model.addAttribute("name", name);
         return "greeting";
     }
      @GetMapping("/main")
@@ -38,7 +38,7 @@ public class Main {
             return "main";
      }
      @PostMapping("/main")
-    public String add(@RequestParam String message,@RequestParam String tag, Map<String,Object>model){
+    public String add(@RequestParam String message,@RequestParam String tag, Model model)  {
        Message mes=new Message(message,tag);
        try{
            repository.save(mes);
@@ -46,9 +46,14 @@ public class Main {
            System.out.println(e);
        }
 
-         Iterable<Message> messages=repository.findAll();
-         model.put("message",messages);
-         return "main";
+       List<Message> messages=repository.findAll();
+
+       System.out.println(message);
+
+       model.addAttribute("message",messages.toString());
+       model.addAttribute("tag",mes.getTag());
+       model.addAttribute("id",mes.getId());
+       return "main";
      }
      @PostMapping("/filter")
      public String filter(@RequestParam String filter, Map<String,Object>model) {

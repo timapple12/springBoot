@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="253b62eb-1e5d-4d39-bdcb-38938d1d1f48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/ListOfRegistered.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/pattern.ftlh" afterDir="false" />
+    <list default="true" id="253b62eb-1e5d-4d39-bdcb-38938d1d1f48" name="Default Changelist" comment="finalized authorization in web app wth db">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/domain/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/domain/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/pattern.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/pattern.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/RegistrationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/greeting.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/main.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/greeting.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/greeting.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/pattern.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/pattern.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +185,7 @@
       <workItem from="1582041694626" duration="600000" />
       <workItem from="1582270604956" duration="38651000" />
       <workItem from="1582458320480" duration="5910000" />
-      <workItem from="1582570099812" duration="21651000" />
+      <workItem from="1582570099812" duration="40916000" />
     </task>
     <task id="LOCAL-00001" summary="finalized authorization in web app wth db">
       <created>1582578929366</created>
@@ -242,54 +236,54 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="1148" y="346" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1579352232671" />
-    <state x="1198" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1579379784552">
+    <state x="1198" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1582646367044">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="1198" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1579379784552" />
+    <state x="1198" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1582646367044" />
     <state x="725" y="399" width="424" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582620088698">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="725" y="399" width="424" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1858.1080@0.0.1858.1080" timestamp="1582620088698" />
-    <state x="554" y="134" key="CommitChangelistDialog2" timestamp="1582578928309">
+    <state x="554" y="134" key="CommitChangelistDialog2" timestamp="1582635418289">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="554" y="134" key="CommitChangelistDialog2/0.0.1858.1080@0.0.1858.1080" timestamp="1582578928309" />
+    <state x="554" y="134" key="CommitChangelistDialog2/0.0.1858.1080@0.0.1858.1080" timestamp="1582635418289" />
     <state x="1020" y="294" key="FileChooserDialogImpl" timestamp="1582396974407">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="1020" y="294" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1582396974407" />
-    <state width="1815" height="293" key="GridCell.Tab.0.bottom" timestamp="1582623913397">
+    <state width="883" height="293" key="GridCell.Tab.0.bottom" timestamp="1582653700249">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="293" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1582623913397" />
-    <state width="1815" height="293" key="GridCell.Tab.0.center" timestamp="1582623913397">
+    <state width="883" height="293" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1582653700249" />
+    <state width="883" height="293" key="GridCell.Tab.0.center" timestamp="1582653700248">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="293" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1582623913397" />
-    <state width="1815" height="293" key="GridCell.Tab.0.left" timestamp="1582623913397">
+    <state width="883" height="293" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1582653700248" />
+    <state width="883" height="293" key="GridCell.Tab.0.left" timestamp="1582653700248">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="293" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1582623913397" />
-    <state width="1815" height="293" key="GridCell.Tab.0.right" timestamp="1582623913397">
+    <state width="883" height="293" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1582653700248" />
+    <state width="883" height="293" key="GridCell.Tab.0.right" timestamp="1582653700248">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="293" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1582623913397" />
-    <state width="1815" height="293" key="GridCell.Tab.1.bottom" timestamp="1582623913398">
+    <state width="883" height="293" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1582653700248" />
+    <state width="883" height="293" key="GridCell.Tab.1.bottom" timestamp="1582653700249">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="293" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1582623913398" />
-    <state width="1815" height="293" key="GridCell.Tab.1.center" timestamp="1582623913398">
+    <state width="883" height="293" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1582653700249" />
+    <state width="883" height="293" key="GridCell.Tab.1.center" timestamp="1582653700249">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="293" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1582623913398" />
-    <state width="1815" height="293" key="GridCell.Tab.1.left" timestamp="1582623913398">
+    <state width="883" height="293" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1582653700249" />
+    <state width="883" height="293" key="GridCell.Tab.1.left" timestamp="1582653700249">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="293" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1582623913398" />
-    <state width="1815" height="293" key="GridCell.Tab.1.right" timestamp="1582623913398">
+    <state width="883" height="293" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1582653700249" />
+    <state width="883" height="293" key="GridCell.Tab.1.right" timestamp="1582653700249">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="293" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1582623913398" />
+    <state width="883" height="293" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1582653700249" />
     <state width="1815" height="364" key="GridCell.Tab.2.bottom" timestamp="1582618118888">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -354,10 +348,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="623" y="235" key="new project wizard/0.0.1858.1080@0.0.1858.1080" timestamp="1582620610359" />
-    <state x="585" y="250" width="672" height="677" key="run.anything.popup" timestamp="1582527397220">
+    <state x="585" y="250" width="672" height="677" key="run.anything.popup" timestamp="1582649719214">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="585" y="250" width="672" height="677" key="run.anything.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1582527397220" />
+    <state x="585" y="250" width="672" height="677" key="run.anything.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1582649719214" />
     <state x="1056" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1582578783423">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
