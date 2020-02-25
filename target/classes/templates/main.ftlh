@@ -1,7 +1,6 @@
-<html>
+<#import "parts/pattern.ftlh" as c>
+<@c.page>
 <csrf disabled="true"/>
-<body>
-    <div>
         <form method="post">
             <input type="hidden"
                    name="${_csrf.parameterName}"
@@ -24,6 +23,4 @@
             <i>{{tag}}</i>
         </div>
     {{/message}}
-
-</body>
-</html>
+</@c.page>

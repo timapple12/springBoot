@@ -1,7 +1,6 @@
-<html>
+<#import "parts/pattern.ftlh" as c>
+<@c.page>
 <csrf disabled="true"/>
-<body>
-    <div>
         <form method="post">
             <input type="hidden"
                    name="${_csrf.parameterName}"
@@ -17,13 +16,11 @@
         <input type="text"name="filter">
         <button type="submit">Find</button>
     </form>
-    {{#messages}}
+    {{#message}}
         <div>
             <b>{{id}}</b>
-             <span>{{messages}}</span>
+             <span>{{message}}</span>
             <i>{{tag}}</i>
         </div>
-    {{/messages}}
-
-</body>
-</html>
+    {{/message}}
+</@c.page>
