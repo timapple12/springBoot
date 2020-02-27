@@ -16,51 +16,55 @@ import java.util.Map;
 public class Main {
     @Autowired
     private MessageRepository repository;
+
     @GetMapping("/")
-    public String g(Map<String,Object> model){
+    public String g(Map<String, Object> model) {
         return "greeting";
     }
+
     @PostMapping("/")
     public String greeting(
-            @RequestParam(name="name", required=false, defaultValue="Oleksandr") String name, Model model) {
+            @RequestParam(name = "name", required = false, defaultValue = "Oleksandr") String name, Model model) {
         model.addAttribute("name", name);
         return "greeting";
     }
-     @GetMapping("/main")
-        public String main(Map<String,Object>model){
-            Iterable<Message> messages=repository.findAll();
-            if(repository.findAll()!=null){
-                model.put("message",messages);
-            }else{
-                model.put("message","there're no data");
-            }
 
-            return "main";
-     }
-     @PostMapping("/main")
-    public String add(@RequestParam String message,@RequestParam String tag, Model model)  {
-       Message mes=new Message(message,tag);
-       try{
-           repository.save(mes);
-       }catch (Exception e){
-           System.out.println(e);
-       }
+    @GetMapping("/main")
+    public String main(Map<String, Object> model) {
+       Iterable<Message> messages = repository.findAll();
+        if (repository.findAll() != null) {
+            model.put("messages", messages);
+        } else {
+            model.put("messages", "there're no data");
+        }
 
-       List<Message> messages=repository.findAll();
+        return "main";
+    }
 
-       System.out.println(message);
+    @PostMapping("/main")
+    public String add(@RequestParam String text, @RequestParam String tag, Map<String,Object> model) {
+        Message mes = new Message(text, tag);
+        try {
+            repository.save(mes);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+       Iterable<Message> messages = repository.findAll();
 
-       model.addAttribute("message",messages.toString());
-       model.addAttribute("tag",mes.getTag());
-       model.addAttribute("id",mes.getId());
-       return "main";
-     }
-     @PostMapping("/filter")
-     public String filter(@RequestParam String filter, Map<String,Object>model) {
-         List<Message> messages=repository.findByTag(filter);
-          model.put("message", messages);
-         return "main";
-     }
+
+        System.out.println(messages);
+
+        model.put("messages", messages.iterator());
+        model.put("filter","");//to avoid error
+        return "main";
+    }
+
+    @PostMapping("/filter")
+    public String filter(@RequestParam String filter, Map<String, Object> model) {
+        List<Message> messages = repository.findByTag(filter);
+        model.put("messages", messages);
+        return "main";
+    }
 
 }
 

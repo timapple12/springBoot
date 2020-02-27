@@ -15,16 +15,13 @@ public class RegistrationController {
     private UsersRepository usersRepository;
     @Autowired(required = false)
     Users frmdb;
-   /* @GetMapping("/registration")
-    public String get(Map<String,Object>model){
-        return "registration";
-    }*/
+
     @PostMapping("/registration")
-    public String addNewUser(Users users, Map<String,Object> model){
-            frmdb= usersRepository.findByUsername(users.getUsername());
-        if(frmdb!=null){
-        model.put("user","User "+users.getUsername().trim()+" exist");
-        return "registration";
+    public String addNewUser(Users users, Map<String, Object> model) {
+        frmdb = usersRepository.findByUsername(users.getUsername());
+        if (frmdb != null) {
+            model.put("user", "User " + users.getUsername().trim() + " exist");
+            return "registration";
 
         }
         users.setActive(true);
@@ -35,10 +32,4 @@ public class RegistrationController {
         usersRepository.save(users);
         return "redirect:/login";
     }
-   /* @RequestMapping("/registration")
-    public String showUsers(Map<String,Object>model){
-        Iterable<Users>listOfUsers=usersRepository.findAll();
-        model.put("users",listOfUsers);
-        return "registration";
-    }*/
 }

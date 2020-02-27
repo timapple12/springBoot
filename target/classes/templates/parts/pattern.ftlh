@@ -1,12 +1,12 @@
 <#macro page>
-<html lang="en">
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Spring test</title>
-</head>
-<body>
-<#nested>
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Spring test</title>
+    </head>
+    <body>
+    <#nested>
+    </body>
+    </html>
 </#macro>

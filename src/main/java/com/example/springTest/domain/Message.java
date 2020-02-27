@@ -1,4 +1,5 @@
 package com.example.springTest.domain;
+
 import javax.persistence.*;
 
 @Entity
@@ -14,8 +15,8 @@ public class Message {
     }
 
     public Message(String message, String tag) {
-        this.message=message;
-        this.tag=tag;
+        this.message = message;
+        this.tag = tag;
     }
 
     public Integer getId() {
@@ -25,13 +26,15 @@ public class Message {
     public String getMessage() {
         return message;
     }
+
     public String getTag() {
         return tag;
     }
 
-    public void setText(String text){
-        this.message=text;
+    public void setText(String text) {
+        this.message = text;
     }
+
     public void setId(Integer id) {
         this.id = id;
     }
