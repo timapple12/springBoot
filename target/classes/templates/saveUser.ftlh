@@ -14,20 +14,20 @@
     </style>
     <form action="/user" method="post">
         <div>
-            <input title="Enter username" type="text" value="${user.username}">
-            <#list rolles as roll>
+            <input title="Enter username" type="text" value="${user.username}" name="username">
+            <#list roles as role>
                 <div>
-                    <input type="checkbox" name="${roll}">${roll}
+                    <input type="checkbox" name="${role}" ${user.roles?seq_contains(role)?string("Checked","")}>${role}
                 </div>
             </#list>
+            <input title="User" type="hidden" name="user_id" value="${user.id}">
             <input type="hidden"
                    name="_csrf"
                    value="_csrf.token"/>
-            <input title="User" type="text" value="${user.id}">
 
         </div>
         <div>
-            <button type="submit"name="Submit" style="align-content: center"></button>
+            <button type="submit" >Submit</button>
         </div>
     </form>
 </@c.page>
