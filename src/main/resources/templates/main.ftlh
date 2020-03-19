@@ -6,6 +6,7 @@
             <input type="submit" value="Sign out"/>
         </form>
     </div>
+    <div> <a href="/user">Users</a></div>
     <div>
         <form method="post">
             <input type="message" name="text" placeholder="Enter a message"/>
@@ -21,7 +22,7 @@
     </form>
 
     <#list messages as m>
-        <div>
+        <div class="mess">
             <b>${m.id}</b>
             <b>${m.message}</b>
             <b>${m.tag}</b>
@@ -29,4 +30,12 @@
     <#else>
         No message
     </#list>
+    <style type="text/css">
+        .mess{
+            background-color: #ffddab;
+            width: 250px;
+            position: center;
+            alignment: center;
+        }
+    </style>
 </@c.page>

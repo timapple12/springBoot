@@ -5,12 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.sql.*;
 import java.util.Map;
+/*language=SQL*/
 //class for showing all registered users when you are on registration page
 @Controller
 public class ListOfRegistered {
     private final String url="jdbc:mysql://localhost:3306/db?useSSL=false";
     private final String usr="root";
-    private final String password="vasyapidr"; //lol, just a joke
+    private final String password="root";
     private final String request="select u.username from users u";
     public static Connection connection;
     protected void connectToDb(){
