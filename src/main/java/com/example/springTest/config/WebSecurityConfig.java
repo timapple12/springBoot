@@ -35,7 +35,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
     @Override
     protected void configure(AuthenticationManagerBuilder auth)  throws Exception {
-
+             /*language=SQL*/
             auth.jdbcAuthentication()
                     .dataSource(dataSource)
                     .passwordEncoder(NoOpPasswordEncoder.getInstance())

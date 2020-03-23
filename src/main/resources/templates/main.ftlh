@@ -8,9 +8,10 @@
     </div>
     <div> <a href="/user">Users</a></div>
     <div>
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             <input type="message" name="text" placeholder="Enter a message"/>
             <input type="message" name="tag" placeholder="Tag"/>
+            <input type="file" name="file">
             <button type="submit">Add</button>
         </form>
     </div>
@@ -27,6 +28,11 @@
             <b>${m.message}</b>
             <b>${m.tag}</b>
         </div>
+        <div>
+            <#if m.filename??>
+                <img src="img\\${m.filename}">
+            </#if>
+        </div>
     <#else>
         No message
     </#list>
@@ -34,8 +40,6 @@
         .mess{
             background-color: #ffddab;
             width: 250px;
-            position: center;
-            alignment: center;
         }
     </style>
 </@c.page>
