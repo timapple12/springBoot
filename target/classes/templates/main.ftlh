@@ -27,11 +27,12 @@
             <b>${m.id}</b>
             <b>${m.message}</b>
             <b>${m.tag}</b>
-       
-                <img src="img\\${m.filename}">
-
         </div>
-
+        <div>
+            <#if m.filename??>
+                <img src="img\${m.filename}">
+            </#if>
+        </div>
     <#else>
         No message
     </#list>

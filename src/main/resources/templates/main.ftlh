@@ -30,7 +30,7 @@
         </div>
         <div>
             <#if m.filename??>
-                <img src="img\\${m.filename}">
+                <img src="img\${m.filename}">
             </#if>
         </div>
     <#else>

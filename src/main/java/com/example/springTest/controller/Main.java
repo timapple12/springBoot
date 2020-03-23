@@ -52,7 +52,7 @@ public class Main {
     public String add(@RequestParam String text,
                       @RequestParam String tag,
                       @RequestParam("file") MultipartFile multipartFile,
-                      Map<String, Object> model) {
+                      Map<String, Object> model) throws IOException {
         Message mes = new Message(text, tag);
         if (multipartFile != null) {
             File fileDirectory = new File(uploadPath);
@@ -61,11 +61,8 @@ public class Main {
             }
             String fileUUID = UUID.randomUUID().toString();
             String res = fileUUID + "." + multipartFile.getOriginalFilename();
-            try {
-                multipartFile.transferTo(new File(uploadPath + "/" + res));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            multipartFile.transferTo(new File(uploadPath + "/" + res));
+            mes.setFilename(res);
 
         }
         try {
