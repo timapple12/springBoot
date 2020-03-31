@@ -48,6 +48,8 @@ public class Users {
         return active;
     }
 
+    public boolean isAdmin(){return roles.contains(Role.ADMIN);}
+
     public void setActive(boolean active) {
         this.active = active;
     }

@@ -1,5 +1,10 @@
 <#import "parts/pattern.ftlh" as c>
 <@c.page>
-    <h2>Hello, user</h2>
-    <a href="/main"> Main page</a>
+    <div class="center-pill"><h2>Hello user</h2></div>
+    <style type="text/css">
+        .center-pill{
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
 </@c.page>

@@ -7,7 +7,6 @@
     </div>
     <style type="text/css">
         .title{
-
             text-align: center;
             vertical-align: middle;
         }

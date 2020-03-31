@@ -32,7 +32,7 @@ public class ListOfRegistered {
             while(resultSet.next()){
                 str+=resultSet.getString(1)+"\t";
             }
-            model.put("user2",str);
+            model.put("user",str);
         }catch (Exception e){
             System.out.println(e);
         }

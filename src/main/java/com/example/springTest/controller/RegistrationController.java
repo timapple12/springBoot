@@ -14,7 +14,7 @@ public class RegistrationController {
     @Autowired(required = false)
     private UsersRepository usersRepository;
     @Autowired(required = false)
-    Users frmdb;
+    private Users frmdb;
 
     @PostMapping("/registration")
     public String addNewUser(Users users, Map<String, Object> model) {
@@ -28,7 +28,6 @@ public class RegistrationController {
         users.setUsername(users.getUsername());
         users.setPassword(users.getPassword());
         users.setRoles(Collections.singleton(Role.USER));
-
         usersRepository.save(users);
         return "redirect:/login";
     }

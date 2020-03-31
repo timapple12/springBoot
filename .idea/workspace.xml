@@ -2,14 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="253b62eb-1e5d-4d39-bdcb-38938d1d1f48" name="Default Changelist" comment="finalized authorization in web app wth db">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/login_pattern.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/names.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/ListOfRegistered.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/ListOfRegistered.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/domain/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/domain/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/pattern.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/pattern.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/names.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/saveUser.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/saveUser.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/ListOfRegistered.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/ListOfRegistered.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/RegistrationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/domain/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/domain/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/greeting.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/greeting.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/pattern.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/pattern.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/saveUser.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/saveUser.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +97,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -184,7 +197,8 @@
       <workItem from="1584983192376" duration="7952000" />
       <workItem from="1585411322305" duration="1201000" />
       <workItem from="1585470332481" duration="3821000" />
-      <workItem from="1585655306084" duration="599000" />
+      <workItem from="1585655306084" duration="11569000" />
+      <workItem from="1585685346679" duration="1738000" />
     </task>
     <task id="LOCAL-00001" summary="finalized authorization in web app wth db">
       <created>1582578929366</created>
@@ -225,10 +239,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="521" y="198" key="#Inspections/0.0.1858.1080@0.0.1858.1080" timestamp="1582569480353" />
-    <state x="985" y="198" key="#Project_Structure" timestamp="1583173481483">
+    <state x="985" y="198" key="#Project_Structure" timestamp="1585685182920">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="985" y="198" key="#Project_Structure/0.0.1858.1080@0.0.1858.1080" timestamp="1583173481483" />
+    <state x="985" y="198" key="#Project_Structure/0.0.1858.1080@0.0.1858.1080" timestamp="1585685182920" />
     <state x="702" y="154" width="1092" height="717" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583255050390">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -257,54 +271,54 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="1020" y="294" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1583322735154" />
-    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1585509914495">
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1585687254162">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1585509914495" />
-    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1585509914495">
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1585687254162" />
+    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1585687254161">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1585509914495" />
-    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1585509914495">
+    <state width="1815" height="295" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1585687254161" />
+    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1585687254161">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1585509914495" />
-    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1585509914495">
+    <state width="1815" height="295" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1585687254161" />
+    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1585687254161">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1585509914495" />
-    <state width="1815" height="295" key="GridCell.Tab.1.bottom" timestamp="1585509914496">
+    <state width="1815" height="295" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1585687254161" />
+    <state width="1815" height="295" key="GridCell.Tab.1.bottom" timestamp="1585687254162">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1585509914496" />
-    <state width="1815" height="295" key="GridCell.Tab.1.center" timestamp="1585509914496">
+    <state width="1815" height="295" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1585687254162" />
+    <state width="1815" height="295" key="GridCell.Tab.1.center" timestamp="1585687254162">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1585509914496" />
-    <state width="1815" height="295" key="GridCell.Tab.1.left" timestamp="1585509914495">
+    <state width="1815" height="295" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1585687254162" />
+    <state width="1815" height="295" key="GridCell.Tab.1.left" timestamp="1585687254162">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1585509914495" />
-    <state width="1815" height="295" key="GridCell.Tab.1.right" timestamp="1585509914496">
+    <state width="1815" height="295" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1585687254162" />
+    <state width="1815" height="295" key="GridCell.Tab.1.right" timestamp="1585687254162">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1585509914496" />
-    <state width="1815" height="364" key="GridCell.Tab.2.bottom" timestamp="1582655589776">
+    <state width="1815" height="295" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1585687254162" />
+    <state width="1815" height="364" key="GridCell.Tab.2.bottom" timestamp="1585685331802">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="364" key="GridCell.Tab.2.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1582655589776" />
-    <state width="1815" height="364" key="GridCell.Tab.2.center" timestamp="1582655589776">
+    <state width="1815" height="364" key="GridCell.Tab.2.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1585685331802" />
+    <state width="1815" height="364" key="GridCell.Tab.2.center" timestamp="1585685331802">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="364" key="GridCell.Tab.2.center/0.0.1858.1080@0.0.1858.1080" timestamp="1582655589776" />
-    <state width="1815" height="364" key="GridCell.Tab.2.left" timestamp="1582655589776">
+    <state width="1815" height="364" key="GridCell.Tab.2.center/0.0.1858.1080@0.0.1858.1080" timestamp="1585685331802" />
+    <state width="1815" height="364" key="GridCell.Tab.2.left" timestamp="1585685331802">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="364" key="GridCell.Tab.2.left/0.0.1858.1080@0.0.1858.1080" timestamp="1582655589776" />
-    <state width="1815" height="364" key="GridCell.Tab.2.right" timestamp="1582655589776">
+    <state width="1815" height="364" key="GridCell.Tab.2.left/0.0.1858.1080@0.0.1858.1080" timestamp="1585685331802" />
+    <state width="1815" height="364" key="GridCell.Tab.2.right" timestamp="1585685331802">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="364" key="GridCell.Tab.2.right/0.0.1858.1080@0.0.1858.1080" timestamp="1582655589776" />
+    <state width="1815" height="364" key="GridCell.Tab.2.right/0.0.1858.1080@0.0.1858.1080" timestamp="1585685331802" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1583254979375">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
