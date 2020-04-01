@@ -20,15 +20,22 @@ public class RegistrationController {
     public String addNewUser(Users users, Map<String, Object> model) {
         frmdb = usersRepository.findByUsername(users.getUsername());
         if (frmdb != null) {
-            model.put("user", "User " + users.getUsername().trim() + " exist");
+            model.put("user", "User " + users.getUsername().trim() + " already exist");
             return "registration";
-
+        }else{
+            model.put("user","");
         }
-        users.setActive(true);
-        users.setUsername(users.getUsername());
-        users.setPassword(users.getPassword());
-        users.setRoles(Collections.singleton(Role.USER));
-        usersRepository.save(users);
-        return "redirect:/login";
+        if(users.getUsername().trim().length()==0||users.getPassword().trim().length()==0){
+            model.put("user","invalid values");
+            return "registration";
+        }else {
+            users.setActive(true);
+            users.setUsername(users.getUsername());
+            users.setPassword(users.getPassword());
+            users.setRoles(Collections.singleton(Role.USER));
+            usersRepository.save(users);
+            return "redirect:/login";
+        }
+
     }
 }

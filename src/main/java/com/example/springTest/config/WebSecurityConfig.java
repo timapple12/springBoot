@@ -37,10 +37,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth)  throws Exception {
              /*language=SQL*/
             auth.jdbcAuthentication()
-                    .dataSource(dataSource)
-                    .passwordEncoder(NoOpPasswordEncoder.getInstance())
-                    .usersByUsernameQuery("select username, password, active from users where username=?")
-                    .authoritiesByUsernameQuery("select u.username, ur.roles from users u inner join users_roles ur on u.id=ur.user_id where u.username=?");
+                        .dataSource(dataSource)
+                        .passwordEncoder(NoOpPasswordEncoder.getInstance())
+                        .usersByUsernameQuery("select username, password, active from users where username=?")
+                        .authoritiesByUsernameQuery("select u.username, ur.roles from users u inner join users_roles ur on u.id=ur.user_id where u.username=?");
+
 
     }
 
