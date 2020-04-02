@@ -1,45 +1,52 @@
 <#import "parts/pattern.ftlh" as c>
 <@c.page>
-    <csrf disabled="true"/>
-    <div>
-        <form action="/logout" method="post">
-            <input type="submit" value="Sign out"/>
-        </form>
-    </div>
+
     <div> <a href="/user">Users</a></div>
-    <div>
-        <form method="post" enctype="multipart/form-data">
-            <input type="message" name="text" placeholder="Enter a message"/>
-            <input type="message" name="tag" placeholder="Tag"/>
-            <input type="file" name="file">
-            <button type="submit">Add</button>
-        </form>
+    <a class="btn btn-primary"data-toggle="collapse" href="#collapse"role="button"aria-expanded="false">
+        Enter a new message
+    </a>
+    <div class="collapse" id="collapse">
+        <div class="form-group my-3">
+            <form method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input type="message" class="form-control" name="text" placeholder="Enter a message"/>
+                </div>
+                <div class="form-group">
+                    <input type="message" class="form-control" name="tag" placeholder="Tag"/>
+                </div>
+                <div class="form-group">
+                    <div class="custom-file">
+                        <input type="file" name="file" id="customFile" class="form-control">
+                        <label class="custom-file-label"for="customFile">Choose file</label>
+                    </div>
+                </div>
+                <input type="hidden"
+                       name="_csrf"
+                       value="_csrf.token"/>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Send message</button>
+                </div>
+            </form>
+        </div>
     </div>
     <div>List of massages</div>
     <form method="post" action="filter">
-
         <input type="text" name="filter" value="${filter!""}"/>
         <button type="submit">Find</button>
     </form>
 
     <#list messages as m>
-        <div class="mess">
-            <b>${m.id}</b>
+        <div class="card my-3" style="width: 15rem;">
+            <#if m.filename??>
+                <img class="card-img-top" src="img\${m.filename}">
+            </#if>
             <b>${m.message}</b>
             <b>${m.tag}</b>
+            <div class="card-footer text-muted"><strong>${m.authorName}</strong></div>
         </div>
-        <div>
-            <#if m.filename??>
-                <img src="img\${m.filename}">
-            </#if>
-        </div>
+
     <#else>
         No message
     </#list>
-    <style type="text/css">
-        .mess{
-            background-color: #ffddab;
-            width: 250px;
-        }
-    </style>
+
 </@c.page>

@@ -22,11 +22,11 @@
     <#if isRegisterForm><div class="button"><button class="btn btn-primary" onclick="document.location='login'" style="width:150px;height:45px">Return to login</button></div></#if>
 </#macro>
 
-<#macro logout>
+<#macro logout >
     <form action="/logout" method="post">
         <input type="hidden"
                name="_csrf"
                value="_csrf.token"/>
-        <button class="btn btn-primary" type="submit">Sign Out</button>
+        <button class="btn btn-outline-danger" type="submit">Sign Out</button>
     </form>
 </#macro>

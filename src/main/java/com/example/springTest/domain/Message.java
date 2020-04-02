@@ -10,6 +10,9 @@ public class Message {
     private String message;
     private String tag;
 
+    //@ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "user_id")
+    private String author;
     private String filename;
 
     public void setMessage(String message) {
@@ -27,9 +30,15 @@ public class Message {
     public Message() {
     }
 
-    public Message(String message, String tag) {
+    public Message(String message, String tag, String author) {
+        this.author = author;
         this.message = message;
         this.tag = tag;
+
+    }
+
+   public void setAuthor(String author) {
+        this.author = author;
     }
 
     public Integer getId() {
@@ -55,6 +64,14 @@ public class Message {
     public void setTag(String tag) {
         this.tag = tag;
     }
+
+    public String getAuthorName() {
+        return author != null ? author : "has no author";
+    }
+
+  /*  public Users getAuthor() {
+        return author;
+    }*/
 
     @Override
     public String toString() {

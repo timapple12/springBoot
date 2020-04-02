@@ -3,29 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="253b62eb-1e5d-4d39-bdcb-38938d1d1f48" name="Default Changelist" comment="finalized authorization in web app wth db">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/config/MvcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/ListOfRegistered.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/ListOfRegistered.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/img/27d8ac36-f426-476a-9809-2330d4de1f1c.New Bitmap Image.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/img/47eccb0d-2b42-4928-abc2-b36fad6f9a9c.New Bitmap Image.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/img/563903f0-3d6c-4f3c-a8bd-f29072078912.New Bitmap Image.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/img/64b20398-ca6e-49b2-a4d9-a6fd27f6f652.New Bitmap Image.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/img/726da596-1982-4b21-bc8b-84b0691f89c7.New Bitmap Image.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/img/931d9d53-1172-4816-946b-0a165979e815.New Bitmap Image.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/img/a1a2a5c2-3ef4-4a23-bc6a-0345c250f048.New Bitmap Image.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/domain/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/domain/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/login_pattern.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/login_pattern.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/pattern.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/pattern.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/config/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/config/MvcConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/ListOfRegistered.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/ListOfRegistered.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/RegistrationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/domain/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/domain/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/login_pattern.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/login_pattern.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/pattern.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/pattern.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +40,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="springTest" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -201,7 +196,9 @@
       <workItem from="1585411322305" duration="1201000" />
       <workItem from="1585470332481" duration="3821000" />
       <workItem from="1585655306084" duration="11569000" />
-      <workItem from="1585685346679" duration="13072000" />
+      <workItem from="1585685346679" duration="13400000" />
+      <workItem from="1585745252466" duration="16828000" />
+      <workItem from="1585808918268" duration="5274000" />
     </task>
     <task id="LOCAL-00001" summary="finalized authorization in web app wth db">
       <created>1582578929366</created>
@@ -234,10 +231,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="finalized authorization in web app wth db" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="521" y="198" key="#Assign_Data_Sources" timestamp="1581435915243">
+    <state x="521" y="198" key="#Assign_Data_Sources" timestamp="1585809284123">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="521" y="198" key="#Assign_Data_Sources/0.0.1858.1080@0.0.1858.1080" timestamp="1581435915243" />
+    <state x="521" y="198" key="#Assign_Data_Sources/0.0.1858.1080@0.0.1858.1080" timestamp="1585809284123" />
     <state x="521" y="198" key="#Inspections" timestamp="1582569480353">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -274,62 +271,62 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="1020" y="294" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1583322735154" />
-    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1585742029514">
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1585818738503">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1585742029514" />
-    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1585742029514">
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1585818738503" />
+    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1585818738502">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1585742029514" />
-    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1585742029514">
+    <state width="1815" height="295" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1585818738502" />
+    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1585818738502">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1585742029514" />
-    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1585742029514">
+    <state width="1815" height="295" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1585818738502" />
+    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1585818738502">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1585742029514" />
-    <state width="1815" height="295" key="GridCell.Tab.1.bottom" timestamp="1585742029515">
+    <state width="1815" height="295" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1585818738502" />
+    <state width="1815" height="295" key="GridCell.Tab.1.bottom" timestamp="1585818738503">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1585742029515" />
-    <state width="1815" height="295" key="GridCell.Tab.1.center" timestamp="1585742029515">
+    <state width="1815" height="295" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1585818738503" />
+    <state width="1815" height="295" key="GridCell.Tab.1.center" timestamp="1585818738503">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1585742029515" />
-    <state width="1815" height="295" key="GridCell.Tab.1.left" timestamp="1585742029515">
+    <state width="1815" height="295" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1585818738503" />
+    <state width="1815" height="295" key="GridCell.Tab.1.left" timestamp="1585818738503">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1585742029515" />
-    <state width="1815" height="295" key="GridCell.Tab.1.right" timestamp="1585742029515">
+    <state width="1815" height="295" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1585818738503" />
+    <state width="1815" height="295" key="GridCell.Tab.1.right" timestamp="1585818738503">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1585742029515" />
-    <state width="1815" height="364" key="GridCell.Tab.2.bottom" timestamp="1585685331802">
+    <state width="1815" height="295" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1585818738503" />
+    <state width="1815" height="364" key="GridCell.Tab.2.bottom" timestamp="1585810694194">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="364" key="GridCell.Tab.2.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1585685331802" />
-    <state width="1815" height="364" key="GridCell.Tab.2.center" timestamp="1585685331802">
+    <state width="1815" height="364" key="GridCell.Tab.2.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1585810694194" />
+    <state width="1815" height="364" key="GridCell.Tab.2.center" timestamp="1585810694193">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="364" key="GridCell.Tab.2.center/0.0.1858.1080@0.0.1858.1080" timestamp="1585685331802" />
-    <state width="1815" height="364" key="GridCell.Tab.2.left" timestamp="1585685331802">
+    <state width="1815" height="364" key="GridCell.Tab.2.center/0.0.1858.1080@0.0.1858.1080" timestamp="1585810694193" />
+    <state width="1815" height="364" key="GridCell.Tab.2.left" timestamp="1585810694193">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="364" key="GridCell.Tab.2.left/0.0.1858.1080@0.0.1858.1080" timestamp="1585685331802" />
-    <state width="1815" height="364" key="GridCell.Tab.2.right" timestamp="1585685331802">
+    <state width="1815" height="364" key="GridCell.Tab.2.left/0.0.1858.1080@0.0.1858.1080" timestamp="1585810694193" />
+    <state width="1815" height="364" key="GridCell.Tab.2.right" timestamp="1585810694194">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="364" key="GridCell.Tab.2.right/0.0.1858.1080@0.0.1858.1080" timestamp="1585685331802" />
+    <state width="1815" height="364" key="GridCell.Tab.2.right/0.0.1858.1080@0.0.1858.1080" timestamp="1585810694194" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1583254979375">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1858.1080@0.0.1858.1080" timestamp="1583254979375" />
-    <state x="918" y="194" key="Maven.ArtifactSearchDialog" timestamp="1582318223097">
+    <state x="522" y="193" key="Maven.ArtifactSearchDialog" timestamp="1585768166560">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="918" y="194" key="Maven.ArtifactSearchDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1582318223097" />
+    <state x="522" y="193" key="Maven.ArtifactSearchDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1585768166560" />
     <state x="409" y="114" key="SettingsEditor" timestamp="1582580089127">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

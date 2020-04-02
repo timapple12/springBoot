@@ -4,6 +4,10 @@ import com.example.springTest.domain.Message;
 import com.example.springTest.repository.MessageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.authentication.AbstractAuthenticationToken;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -49,11 +53,19 @@ public class Main {
     }
 
     @PostMapping("/main")
-    public String add(@RequestParam String text,
+    public String add(@AuthenticationPrincipal String user,                 // legacy, in future replace with Users(class) instead String
+                      @RequestParam String text,
                       @RequestParam String tag,
                       @RequestParam("file") MultipartFile multipartFile,
                       Map<String, Object> model) throws IOException {
-        Message mes = new Message(text, tag);
+
+        AbstractAuthenticationToken auth = (AbstractAuthenticationToken)    // this gets all information from SpringSecurity
+                SecurityContextHolder.getContext().getAuthentication();
+        UserDetails details = (UserDetails) auth.getPrincipal();            // UserDetails - integrated class into SpringSecurity
+                                                                            // Helps to get user info
+        System.out.println(details.getUsername());
+        user=details.getUsername();
+        Message mes = new Message(text, tag, user);
         if (multipartFile != null) {
             File fileDirectory = new File(uploadPath);
             if (!fileDirectory.exists()) {
