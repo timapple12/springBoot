@@ -22,7 +22,7 @@
         </ul>
         <div class="navbar-text mr-3">${name}</div>
         <#if notAuth>
-            <div class="pull-down"><@l.logout /></div>
+            <div><@l.logout/></div>
         </#if>
     </div>
 </nav>

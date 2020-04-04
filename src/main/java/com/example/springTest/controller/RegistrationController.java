@@ -1,41 +1,42 @@
 package com.example.springTest.controller;
 
-import com.example.springTest.domain.Role;
 import com.example.springTest.domain.Users;
-import com.example.springTest.repository.UsersRepository;
+import com.example.springTest.service.UsersDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import java.util.Collections;
 import java.util.Map;
 
 @org.springframework.stereotype.Controller
 public class RegistrationController {
     @Autowired(required = false)
-    private UsersRepository usersRepository;
-    @Autowired(required = false)
-    private Users frmdb;
+    private UsersDetailService usersService;
+
 
     @PostMapping("/registration")
     public String addNewUser(Users users, Map<String, Object> model) {
-        frmdb = usersRepository.findByUsername(users.getUsername());
-        if (frmdb != null) {
+        if (!usersService.add_new_user(users)) {
             model.put("user", "User " + users.getUsername().trim() + " already exist");
             return "registration";
-        }else{
-            model.put("user","");
         }
-        if(users.getUsername().trim().length()==0||users.getPassword().trim().length()==0){
-            model.put("user","invalid values");
+        if(users.getUsername().trim().length()==0||
+                users.getPassword().trim().length()==0){
+            model.put("user","Invalid values!");
             return "registration";
-        }else {
-            users.setActive(true);
-            users.setUsername(users.getUsername());
-            users.setPassword(users.getPassword());
-            users.setRoles(Collections.singleton(Role.USER));
-            usersRepository.save(users);
-            return "redirect:/login";
         }
+            return "redirect:/login";
+    }
+    @GetMapping("/activate/{code}")
+    public String activate(Map<String, Object> model, @PathVariable String code){
+        boolean iActivated = usersService.isActivated(code);
 
+        if(iActivated){
+            model.put("user", "User successfully activated!");
+        }else{
+            model.put("user","Something went wrong, repeat activation once more please");
+        }
+        return "login";
     }
 }

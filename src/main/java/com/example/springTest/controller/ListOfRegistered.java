@@ -13,6 +13,7 @@ import java.util.Map;
 //class for showing all registered users when you are on registration page
 @Controller
 public class ListOfRegistered {
+
     private final String url="jdbc:mysql://localhost:3306/db?useSSL=false";
     private final String usr="root";
     private final String password="root";
@@ -21,6 +22,11 @@ public class ListOfRegistered {
     public String string = null;
     @Autowired
     private UsersRepository usersRepository;
+
+    public ListOfRegistered(UsersRepository usersRepository) {
+        this.usersRepository = usersRepository;
+    }
+
     protected void connectToDb(){
         try {
             connection= DriverManager.getConnection(url,usr,password);
@@ -31,7 +37,7 @@ public class ListOfRegistered {
 
     @GetMapping("/registration")
     public
-    String showAllRegUsers(Map<String,Object>model){
+    String showAllRegUsers(Map<String,Object> model){
         connectToDb();
        Iterable<Users>temp=usersRepository.findAll();
         try (Statement statement = connection.createStatement()) {

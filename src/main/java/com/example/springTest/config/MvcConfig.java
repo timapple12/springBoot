@@ -9,6 +9,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 @EnableWebMvc
+//@EnableJpaRepositories(basePackageClasses = UsersRepository.class)
 public class MvcConfig implements WebMvcConfigurer {
     @Value("${upload.path}")    //   load the directory name from application.properties
     private String uploadPath;
