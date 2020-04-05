@@ -22,8 +22,8 @@ public class Users implements UserDetails {
     private String password;
 
     private boolean active;
-    @CollectionTable(name="users_roles",joinColumns = @JoinColumn(name="user_id"))
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
+    @CollectionTable(name="users_roles",joinColumns = @JoinColumn(name="user_id"))
     @Enumerated(EnumType.STRING)
     private Set<Role> roles;
 
@@ -109,5 +109,18 @@ public class Users implements UserDetails {
 
     public void setActivation(String activation) {
         this.activation = activation;
+    }
+
+    @Override
+    public String toString() {
+        return "Users{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", email='" + email + '\'' +
+                ", activation='" + activation + '\'' +
+                ", password='" + password + '\'' +
+                ", active=" + active +
+                ", roles=" + roles +
+                '}';
     }
 }

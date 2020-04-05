@@ -39,11 +39,11 @@ public class UsersDetailService implements UserDetailsService {
         users.setRoles(Collections.singleton(Role.USER));
         users.setEmail(users.getEmail());
         users.setActivation(UUID.randomUUID().toString());
-        if(StringUtils.isEmpty(users.getEmail())){              // Check if email is empty or null
+        if(!StringUtils.isEmpty(users.getEmail())){              // Check if email is empty or null
             String message = String.format("Hi! %s,\n Welcome to my springTest!\n" +
                     " Please click to link below to activate your account:" +
                     " http://localhost:8181/activate/%s",users.getUsername(),users.getActivation());
-            mailSend.send("kotermakbilozerskij@gmail.com","Activation code", message);
+            mailSend.send(users.getEmail(),"Activation code", message);
         }
         frmdtb.save(users);
         return true;

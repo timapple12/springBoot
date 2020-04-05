@@ -2,30 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="253b62eb-1e5d-4d39-bdcb-38938d1d1f48" name="Default Changelist" comment="finalized authorization in web app wth db">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/config/MailConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/service/MailSend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/service/UsersDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/EditProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_DB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_ADMIN.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/editProfile.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/config/MvcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/ListOfRegistered.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/ListOfRegistered.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/controller/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/domain/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/domain/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/domain/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/domain/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/repository/MessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/repository/MessageRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/repository/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/repository/UsersRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springTest/service/UsersDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springTest/service/UsersDetailService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/login_pattern.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/login_pattern.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/config/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/config/MvcConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/ListOfRegistered.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/ListOfRegistered.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/controller/RegistrationController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/domain/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/domain/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/repository/UsersRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/repository/UsersRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/login_pattern.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/login_pattern.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springTest/service/UsersDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springTest/service/UsersDetailService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,9 +53,9 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -117,8 +112,14 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tonis\IdeaProjects\springTest\src\main\resources\db\migration" />
       <recent name="C:\Users\tonis\IdeaProjects\springTest\src\main\resources\templates" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn flyway:repair" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -148,7 +149,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:MySQL - db@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:MySQL - db@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@7cf4dc2a" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -212,7 +223,9 @@
       <workItem from="1585899502917" duration="1948000" />
       <workItem from="1585903467322" duration="6036000" />
       <workItem from="1585917616698" duration="6051000" />
-      <workItem from="1585998946475" duration="6099000" />
+      <workItem from="1585998946475" duration="9862000" />
+      <workItem from="1586074159808" duration="6973000" />
+      <workItem from="1586085841297" duration="10074000" />
     </task>
     <task id="LOCAL-00001" summary="finalized authorization in web app wth db">
       <created>1582578929366</created>
@@ -257,6 +270,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="985" y="198" key="#Project_Structure/0.0.1858.1080@0.0.1858.1080" timestamp="1585685182920" />
+    <state x="521" y="198" key="#SQL_Resolution_Scopes" timestamp="1586024356672">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="521" y="198" key="#SQL_Resolution_Scopes/0.0.1858.1080@0.0.1858.1080" timestamp="1586024356672" />
     <state x="702" y="154" width="1092" height="717" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583255050390">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -265,10 +282,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="1148" y="346" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1579352232671" />
-    <state x="1198" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1585905035928">
+    <state x="1198" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1586088158630">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="1198" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1585905035928" />
+    <state x="1198" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1586088158630" />
     <state x="777" y="429" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1583173683883">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -285,38 +302,38 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="1020" y="294" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1583322735154" />
-    <state width="1815" height="274" key="GridCell.Tab.0.bottom" timestamp="1586016058180">
+    <state width="1815" height="271" key="GridCell.Tab.0.bottom" timestamp="1586096429776">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="274" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1586016058180" />
-    <state width="1815" height="274" key="GridCell.Tab.0.center" timestamp="1586016058180">
+    <state width="1815" height="271" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1586096429776" />
+    <state width="1815" height="271" key="GridCell.Tab.0.center" timestamp="1586096429775">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="274" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1586016058180" />
-    <state width="1815" height="274" key="GridCell.Tab.0.left" timestamp="1586016058180">
+    <state width="1815" height="271" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1586096429775" />
+    <state width="1815" height="271" key="GridCell.Tab.0.left" timestamp="1586096429775">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="274" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1586016058180" />
-    <state width="1815" height="274" key="GridCell.Tab.0.right" timestamp="1586016058180">
+    <state width="1815" height="271" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1586096429775" />
+    <state width="1815" height="271" key="GridCell.Tab.0.right" timestamp="1586096429776">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="274" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1586016058180" />
-    <state width="1815" height="274" key="GridCell.Tab.1.bottom" timestamp="1586016058181">
+    <state width="1815" height="271" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1586096429775" />
+    <state width="1815" height="271" key="GridCell.Tab.1.bottom" timestamp="1586096429776">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="274" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1586016058181" />
-    <state width="1815" height="274" key="GridCell.Tab.1.center" timestamp="1586016058181">
+    <state width="1815" height="271" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1586096429776" />
+    <state width="1815" height="271" key="GridCell.Tab.1.center" timestamp="1586096429776">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="274" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1586016058181" />
-    <state width="1815" height="274" key="GridCell.Tab.1.left" timestamp="1586016058181">
+    <state width="1815" height="271" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1586096429776" />
+    <state width="1815" height="271" key="GridCell.Tab.1.left" timestamp="1586096429776">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="274" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1586016058181" />
-    <state width="1815" height="274" key="GridCell.Tab.1.right" timestamp="1586016058181">
+    <state width="1815" height="271" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1586096429776" />
+    <state width="1815" height="271" key="GridCell.Tab.1.right" timestamp="1586096429776">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="274" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1586016058181" />
+    <state width="1815" height="271" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1586096429776" />
     <state width="1815" height="364" key="GridCell.Tab.2.bottom" timestamp="1585944498649">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -381,17 +398,17 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="598" y="145" width="661" height="789" key="find.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1583255320238" />
-    <state x="623" y="235" key="new project wizard" timestamp="1584259951876">
+    <state x="623" y="235" key="new project wizard" timestamp="1586080973284">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="623" y="235" key="new project wizard/0.0.1858.1080@0.0.1858.1080" timestamp="1584259951876" />
-    <state x="585" y="250" width="672" height="677" key="run.anything.popup" timestamp="1585499820863">
+    <state x="623" y="235" key="new project wizard/0.0.1858.1080@0.0.1858.1080" timestamp="1586080973284" />
+    <state x="585" y="250" width="672" height="677" key="run.anything.popup" timestamp="1586081089135">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="585" y="250" width="672" height="677" key="run.anything.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1585499820863" />
-    <state x="1056" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1583255554840">
+    <state x="585" y="250" width="672" height="677" key="run.anything.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1586081089135" />
+    <state x="1056" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1586081145582">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="1056" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1583255554840" />
+    <state x="1056" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1586081145582" />
   </component>
 </project>

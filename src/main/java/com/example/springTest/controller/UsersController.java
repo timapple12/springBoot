@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 @Controller
 @RequestMapping("/user")
 @PreAuthorize("hasAuthority('ADMIN')")
-public class UsersController {
+public class UsersController{
     @Autowired
     private UsersRepository usersRepository;
 
@@ -50,4 +50,5 @@ public class UsersController {
 
         return "redirect:/user";
     }
+
 }

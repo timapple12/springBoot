@@ -69,9 +69,9 @@ public class Message {
         return author != null ? author : "has no author";
     }
 
-  /*  public Users getAuthor() {
+     public String getAuthor() {
         return author;
-    }*/
+    }
 
     @Override
     public String toString() {
