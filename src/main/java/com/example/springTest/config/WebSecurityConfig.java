@@ -33,16 +33,19 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http.csrf().disable()
-                .authorizeRequests()
-                .antMatchers("/", "/registration","/activate/*").permitAll()
-                .anyRequest().authenticated()
+                    .authorizeRequests()
+                    .antMatchers("/", "/registration","/activate/*")
+                    .permitAll()
+                    .anyRequest().authenticated()
                 .and()
-                .formLogin()
-                .loginPage("/login")
-                .permitAll()
+                    .formLogin()
+                    .loginPage("/login")
+                    .permitAll()
                 .and()
-                .logout()
-                .permitAll().and().formLogin();
+                    .rememberMe()
+                .and()
+                    .logout()
+                    .permitAll().and().formLogin();
     }
     @Override
     protected void configure(AuthenticationManagerBuilder auth)  throws Exception {

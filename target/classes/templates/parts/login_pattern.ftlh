@@ -55,6 +55,16 @@
                 </div>
             </div>
         </#if>
+
+        <div>
+            <div class="g-recaptcha" data-sitekey="6LdISecUAAAAADjywSmOZ_uLxlX7aFpkogBsZ7_G"></div>
+            <#if captchaError??>
+                <div class="alert alert-danger" role="alert">
+                    ${captchaError}
+                </div>
+
+            </#if>
+        </div>
         <input type="hidden"
                name="_csrf"
                value="_csrf.token"/>
