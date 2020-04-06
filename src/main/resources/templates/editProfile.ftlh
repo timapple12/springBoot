@@ -17,9 +17,9 @@
         </div>
     </div>
     <div class="form-group row">
-        <label class="col-sm-2 col-form-label">New password:</label>
+        <label class="col-sm-2 col-form-label">Confirm the password:</label>
         <div class="col-sm-5">
-            <input type="text" name="password" class="form-control" placeholder="password" value=${password?if_exists}>
+            <input type="text" name="password" class="form-control" placeholder="password" value="">
         </div>
     </div>
     <div class="button"><button class="btn btn-primary" type="submit"style="width:150px;height:45px">Submit</button></div>
