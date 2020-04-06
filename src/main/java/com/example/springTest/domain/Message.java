@@ -1,5 +1,8 @@
 package com.example.springTest.domain;
 
+import org.hibernate.validator.constraints.Length;
+import javax.validation.constraints.NotBlank;
+
 import javax.persistence.*;
 
 @Entity
@@ -7,6 +10,9 @@ public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
+
+    @NotBlank(message = "Invalid input, field cannot be null!")
+    @Length(max = 4096, message = "Message is too long")
     private String message;
     private String tag;
 

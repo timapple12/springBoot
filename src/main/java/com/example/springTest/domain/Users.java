@@ -4,6 +4,8 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import java.util.Collection;
 import java.util.Set;
 
@@ -13,19 +15,33 @@ public class Users implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    @NotBlank(message = "Username cannot be null!")
     @Column(name = "username")
     private String username;
+    @Email(message = "The email is incorrect! Try again!")
+    @NotBlank(message = "The Email cannot be null!")
     private String email;
     private String activation;
 
     @Column(name = "password")
     private String password;
 
+    @Transient                                                  // "talk" to hibernate that there is no need to save
+                                                                // this variable in db
+    private String secondPassword;
     private boolean active;
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     @CollectionTable(name="users_roles",joinColumns = @JoinColumn(name="user_id"))
     @Enumerated(EnumType.STRING)
     private Set<Role> roles;
+
+    public String getSecondPassword() {
+        return secondPassword;
+    }
+
+    public void setSecondPassword(String secondPassword) {
+        this.secondPassword = secondPassword;
+    }
 
     public Long getId() {
         return id;

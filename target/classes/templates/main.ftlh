@@ -5,12 +5,19 @@
     <a class="btn btn-primary"data-toggle="collapse" href="#collapse"role="button"aria-expanded="false">
         Enter a new message
     </a>
-    <div class="collapse" id="collapse">
+    <div class="collapse <#if message??>show</#if>" id="collapse">
         <div class="form-group my-3">
             <form method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <input type="message" class="form-control" name="text" placeholder="Enter a message"/>
+                    <input type="message" class="form-control ${(messageError??)?string('is-invalid',"")}"
+                           value="<#if message??>${message.message}</#if>" name="text" placeholder="Enter a message"/>
+                    <#if messageError??>
+                    <div class="invalid-feedback">
+                        ${messageError}
+                    </div>
+                    </#if>
                 </div>
+
                 <div class="form-group">
                     <input type="message" class="form-control" name="tag" placeholder="Tag"/>
                 </div>

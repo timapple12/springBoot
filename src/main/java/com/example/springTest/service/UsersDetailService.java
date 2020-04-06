@@ -26,7 +26,11 @@ public class UsersDetailService implements UserDetailsService {
     private PasswordEncoder passwordEncoder;
     @Override
     public UserDetails loadUserByUsername(String name) throws UsernameNotFoundException {
-        return frmdtb.findByUsername(name);
+        Users users=frmdtb.findByUsername(name);
+        if(users == null){
+            throw new UsernameNotFoundException("User not found exception");
+        }
+        return users;
     }
 
     public boolean add_new_user(Users users){
