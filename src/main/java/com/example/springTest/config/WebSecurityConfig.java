@@ -24,10 +24,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     private DataSource dataSource;
     @Autowired
     private PasswordEncoder passwordEncoder;
-    @Bean
-    public PasswordEncoder getPasswordEncoder(){
-        return new MessageDigestPasswordEncoder("MD5");
-    };
+
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {

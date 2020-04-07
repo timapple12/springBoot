@@ -10,19 +10,18 @@ spring.jpa.hibernate.ddl-auto = validate
 spring.freemarker.expose-request-attributes=true
 spring.mustache.expose-request-attributes=true
 allowPublicKeyRetrieval=true
-upload.path=/home/ec2-user/uploads
+upload.path=C:\\Users\\tonis\\IdeaProjects\\springTest\\src\\main\\resources\\templates\\img
 spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
 spring.mail.host=smtp.gmail.com
 spring.mail.username=springexampletest@gmail.com
 spring.mail.password=vasyapidr
 spring.mail.port=465
 spring.mail.protocol=smtps
-mail.debug=false
-
+mail.debug=true
 mail.smtp.host=smtp.gmail.com, mail.smtp.port=25, mail.smtp.auth=true mail.smtp.starttls.enable=true
 spring.jpa.hibernate.use-new-id-generator-mappings=false
 recaptcha.secret = 6LdISecUAAAAAP52z0VXaVHIZO3Eiw3JuylriD4x
 spring.session.jdbc.initialize-schema=always
 spring.session.jdbc.table-name=SPRING_SESSION
 
-hostname = 35.166.196.47
+hostname = localhost:8181

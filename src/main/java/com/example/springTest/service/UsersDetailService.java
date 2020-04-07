@@ -5,6 +5,7 @@ import com.example.springTest.domain.Role;
 import com.example.springTest.domain.Users;
 import com.example.springTest.repository.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -20,6 +21,8 @@ public class UsersDetailService implements UserDetailsService {
     @Autowired
     private UsersRepository frmdtb;
 
+    @Value("${hostname}")
+    private String hostName;
     @Autowired
     private MailSend mailSend;
     @Autowired
@@ -52,7 +55,9 @@ public class UsersDetailService implements UserDetailsService {
         if(!StringUtils.isEmpty(users.getEmail())) {                // Check if email is empty or null with Spring's isEmpty
             String message = String.format("Hi! %s,\n Welcome to my springTest!\n" +
                     " Please click to link below to activate your account:" +
-                    " http://localhost:8181/activate/%s", users.getUsername(), users.getActivation());
+                    " http://%s/activate/%s", users.getUsername(),
+                        hostName,
+                        users.getActivation());
             mailSend.send(users.getEmail(), "Activation code", message);
             return "Email sent successfully";
         }
