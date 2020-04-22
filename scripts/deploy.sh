@@ -2,6 +2,14 @@
 
 mvn clean package
 
-echo 'COpy files...'
+echo 'Copy files...'
 
-scp ssh -i "spring.pem" ec2-user@ec2-35-166-196-47.us-west-2.compute.amazonaws.com
+scp ssh -i "sprin.pem" ubuntu@ec2-18-237-111-160.us-west-2.compute.amazonaws.com
+
+echo 'Restart server...'
+
+ssh -i "sprin.pem" ubuntu@ec2-18-237-111-160.us-west-2.compute.amazonaws.com<< EOF
+
+EOF
+
+#scp "sprin.pem" ubuntu@ec2-18-237-111-160.us-west-2.compute.amazonaws.com:~/files
