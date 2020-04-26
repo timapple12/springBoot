@@ -1,7 +1,6 @@
 <#import "parts/pattern.ftlh" as c>
 <@c.page>
 
-    <div> <a href="/user">Users</a></div>
     <a class="btn btn-primary"data-toggle="collapse" href="#collapse"role="button"aria-expanded="false">
         Enter a new message
     </a>

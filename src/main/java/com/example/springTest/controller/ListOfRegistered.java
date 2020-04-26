@@ -15,8 +15,8 @@ import java.util.Map;
 public class ListOfRegistered {
 
     private final String url="jdbc:mysql://localhost:3306/db?useSSL=false";
-    private final String usr="root";
-    private final String password="root";
+    private final String usr="motherfucker";
+    private final String password="#da&PXR9#K;*4v05vk8Ro-05K";
     private final String request="select u.username from users u";
     public static Connection connection;
     public String string = null;
